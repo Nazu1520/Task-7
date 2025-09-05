@@ -1,0 +1,14 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+public class SimpleFileCheck {
+   public static void main(String[] args) {
+       try {
+           Scanner scan = new Scanner(new File("data.txt"));
+           System.out.println("File found and ready to read.");
+           scan.close();
+       } catch (FileNotFoundException e) {
+           System.out.println("Error: File not found.");
+       }
+   }
+}
