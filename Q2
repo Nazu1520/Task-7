@@ -1,0 +1,18 @@
+public class ExceptionDemo {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {10, 20, 30};
+            System.out.println("index 5: " + numbers[5]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Error: " + e);
+        }
+ 
+        
+        try {
+            String text = "Java";
+            System.out.println("char at index 10: " + text.charAt(10)); 
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("String Error: " + e);
+        }
+    }
+}
